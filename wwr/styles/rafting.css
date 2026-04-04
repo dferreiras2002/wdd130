@@ -16,21 +16,25 @@ body {
   color: var(--accent1-color);
 }
 
+/* CENTRALIZA O SITE */
 header, main, footer {
   width: 840px;
   margin: 0 auto;
 }
 
+/* TÍTULOS */
 h1, h2 {
   font-family: var(--heading-font);
   color: var(--primary-color);
 }
 
+/* AJUSTE GERAL DE ESPAÇAMENTO */
 nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+  margin: 12px;
+  padding: 6px;
 }
 
+/* HERO */
 .hero {
   position: relative;
 }
@@ -49,20 +53,107 @@ h1 {
   background-color: var(--accent1-color);
   color: white;
   padding: 10px;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .hero article {
   position: absolute;
   bottom: 20px;
   background: white;
+  padding: 15px;
+  border-radius: 8px; /* MELHORIA VISUAL */
 }
 
 .hero article img {
   float: right;
   width: 125px;
+  margin-left: 10px;
 }
 
+/* ========================= */
+/* HEADER COM GRID */
+/* ========================= */
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+}
+
+header img {
+  width: 120px;
+}
+
+/* ========================= */
+/* NAV COM FLEX */
+/* ========================= */
+nav {
+  display: flex;
+  justify-content: space-evenly; /* MELHOR QUE space-around */
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent1-color);
+}
+
+/* ========================= */
+/* HISTORY */
+/* ========================= */
+.history-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.history img {
+  width: 200px;
+}
+
+.history-content p {
+  max-width: 200px; /* MELHORA LEITURA */
+}
+
+/* ========================= */
+/* ADVENTURES */
+/* ========================= */
+.adventure-gallery {
+  display: flex;
+  justify-content: center; /* CENTRALIZA MELHOR */
+  gap: 10px;
+}
+
+figure {
+  width: 18%;
+  text-align: center;
+}
+
+figure img {
+  width: 100%;
+  border-radius: 6px; /* MELHORIA VISUAL */
+}
+
+/* ========================= */
+/* FOOTER */
+/* ========================= */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+}
+
+.social img {
+  width: 30px;
+}
+
+/* SOCIAL MEDIA LINK */
 .socialmedia a {
   text-decoration: none;
 }
