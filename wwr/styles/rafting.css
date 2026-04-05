@@ -1,159 +1,113 @@
-:root {
-  --primary-color: #0077b6;
-  --accent1-color: #023e8a;
-  --heading-font: Arial, sans-serif;
-  --body-font: Arial, sans-serif;
-}
-
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: var(--body-font);
-  color: var(--accent1-color);
+    font-family: Arial, sans-serif;
 }
 
-/* CENTRALIZA O SITE */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004e89;
+    padding: 15px;
 }
 
-/* TÍTULOS */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+header img {
+    width: 120px;
 }
 
-/* AJUSTE GERAL DE ESPAÇAMENTO */
-nav, p, section, article {
-  margin: 12px;
-  padding: 6px;
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
 }
 
 /* HERO */
 .hero {
-  position: relative;
+    position: relative;
 }
 
 .hero img {
-  display: block;
-  width: 100%;
-  height: auto;
+    width: 100%;
 }
 
-h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  text-align: center;
-  background-color: var(--accent1-color);
-  color: white;
-  padding: 10px;
-  opacity: 0.85;
+.hero h1 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: white;
+    font-size: 2.5rem;
 }
 
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  background: white;
-  padding: 15px;
-  border-radius: 8px; /* MELHORIA VISUAL */
+/* NEWSLETTER */
+.newsletter {
+    text-align: center;
+    padding: 20px;
 }
 
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 10px;
+.newsletter input, .newsletter button {
+    padding: 10px;
+    margin: 5px;
 }
 
-/* ========================= */
-/* HEADER COM GRID */
-/* ========================= */
-header {
-  display: grid;
-  grid-template-columns: 150px 1fr;
-  align-items: center;
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 20px;
 }
 
-header img {
-  width: 120px;
+.cta a {
+    background: orange;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
 }
 
-/* ========================= */
-/* NAV COM FLEX */
-/* ========================= */
-nav {
-  display: flex;
-  justify-content: space-evenly; /* MELHOR QUE space-around */
-  align-items: center;
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
 }
 
-nav a {
-  text-decoration: none;
-  font-weight: bold;
-  color: var(--accent1-color);
+.grid img {
+    width: 100%;
 }
 
-/* ========================= */
-/* HISTORY */
-/* ========================= */
-.history-content {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  justify-content: center;
+/* TRIPS */
+.trips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
-.history img {
-  width: 200px;
+.trips img {
+    width: 100%;
 }
 
-.history-content p {
-  max-width: 200px; /* MELHORA LEITURA */
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-/* ========================= */
-/* ADVENTURES */
-/* ========================= */
-.adventure-gallery {
-  display: flex;
-  justify-content: center; /* CENTRALIZA MELHOR */
-  gap: 10px;
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
 }
 
-figure {
-  width: 18%;
-  text-align: center;
-}
-
-figure img {
-  width: 100%;
-  border-radius: 6px; /* MELHORIA VISUAL */
-}
-
-/* ========================= */
 /* FOOTER */
-/* ========================= */
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.social {
-  display: flex;
-  gap: 10px;
-}
-
-.social img {
-  width: 30px;
-}
-
-/* SOCIAL MEDIA LINK */
-.socialmedia a {
-  text-decoration: none;
+    background: #004e89;
+    color: white;
+    text-align: center;
+    padding: 15px;
 }
